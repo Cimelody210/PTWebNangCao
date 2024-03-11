@@ -2,7 +2,6 @@
 using System;
 using System.IO;
 using System.Data.Entity;
-using System.Linq.Dynamic.Core;
 namespace Cau1.Controllers.Core
 {
     public class Blog
