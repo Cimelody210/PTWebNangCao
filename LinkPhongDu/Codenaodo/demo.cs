@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+using System.Collection.Generic;
 
 
 public tbNguoiDung GetById(string username)
