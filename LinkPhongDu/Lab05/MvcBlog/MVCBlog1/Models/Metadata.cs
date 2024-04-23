@@ -51,6 +51,9 @@ namespace MVCBlog1.Models
 		[Range(1, int.MaxValue, ErrorMessage = "BlogID khác 0")]
 		public int BlogBlogId ;
 
+		[Display(Name = "Thuộc bài viết")]
+		public int BlogName;
+
 		[Display(Name = "Thời gian tạo")]
 		[Required(ErrorMessage = "Hãy chọn ngày tháng")]
 		[DataType(DataType.Date, ErrorMessage = "Nhập đúng định dạng dd/mm/yyyy")]

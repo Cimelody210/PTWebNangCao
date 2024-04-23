@@ -18,7 +18,8 @@ namespace MVCBlog1.Models
         public string Title { get; set; }
         public string Content { get; set; }
         public int BlogBlogId { get; set; }
-        public Nullable<System.DateTime> CreatedDate { get; set; }
+		public string BlogName { get; set; }
+		public Nullable<System.DateTime> CreatedDate { get; set; }
     
         public virtual BlogSet BlogSet { get; set; }
     }
