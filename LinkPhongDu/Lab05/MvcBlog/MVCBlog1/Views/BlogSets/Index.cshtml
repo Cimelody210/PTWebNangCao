@@ -1,0 +1,95 @@
+﻿@model IEnumerable<MVCBlog1.Models.BlogSet>
+
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+	@Html.ActionLink("Create New", "Create")
+</p>
+@*@using (Html.BeginForm("Index", "BlogSets", FormMethod.Get))
+{
+	<p>
+		Title:@Html.TextBox("search")<input type="submit" value="Tim kiem" />
+	</p>
+}*@
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Name)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Url)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Description)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Owner)
+		</th>
+
+		<th>
+			@Html.DisplayNameFor(model => model.Rank)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Name)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Url)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Description)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Owner)
+			</td>
+
+			<td>
+				@{
+					var rankValue = item.Rank ?? 0;
+					string colorStyle = "";
+					if (rankValue >= 85 && rankValue <= 100)
+					{
+						colorStyle = "color: red;";
+					}
+					else if (rankValue >= 70 && rankValue <= 84)
+					{
+						colorStyle = "color: yellow;";
+					}
+					else if (rankValue >= 55 && rankValue <= 69)
+					{
+						colorStyle = "color: blue;";
+					}
+					else if (rankValue >= 40 && rankValue <= 54)
+					{
+						colorStyle = "color: lightblue;";
+					}
+					else
+					{
+						colorStyle = "color: black;";
+					}
+				}
+
+				<span style="@colorStyle">
+					@Html.DisplayFor(modelItem => item.Rank)
+				</span>
+			</td>
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id = item.BlogId }) |
+				@*<a href="/BlogSets/Edit/">Edit12399</a>*@
+				@Html.ActionLink("Details", "Details", new { id = item.BlogId }) |
+				@Html.ActionLink("Delete", "Delete", new { id = item.BlogId })
+			</td>
+		</tr>
+	}
+
+</table>
