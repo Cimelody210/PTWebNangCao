@@ -1,0 +1,12 @@
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\CodeFirstToExistingDatabase.exe.config
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\CodeFirstToExistingDatabase.exe
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\CodeFirstToExistingDatabase.pdb
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\EntityFramework.dll
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\EntityFramework.SqlServer.dll
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\EntityFramework.xml
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\bin\Debug\EntityFramework.SqlServer.xml
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\obj\Debug\CodeFirstToExistingDatabase.csproj.AssemblyReference.cache
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\obj\Debug\CodeFirstToExistingDatabase.csproj.CoreCompileInputs.cache
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\obj\Debug\CodeFirs.DC10D5C7.Up2Date
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\obj\Debug\CodeFirstToExistingDatabase.exe
+D:\A_FOOD\KH2_N3\UDWebNangCao\2115196_Lab01\Bai3_4\ModelFirst\CodeFirstToExistingDatabase\obj\Debug\CodeFirstToExistingDatabase.pdb

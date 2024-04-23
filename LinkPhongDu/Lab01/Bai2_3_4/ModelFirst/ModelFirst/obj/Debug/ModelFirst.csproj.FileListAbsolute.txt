@@ -1,0 +1,12 @@
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\ModelFirst.exe.config
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\ModelFirst.exe
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\ModelFirst.pdb
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\EntityFramework.dll
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\EntityFramework.xml
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\obj\Debug\ModelFirst.csproj.AssemblyReference.cache
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\obj\Debug\ModelFirst.csproj.CoreCompileInputs.cache
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\obj\Debug\ModelFirst.csproj.Up2Date
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\obj\Debug\ModelFirst.exe
+D:\DaiHocDaLat\HocTAP\Web nâng cao\Bai2_3_4\ModelFirst\ModelFirst\obj\Debug\ModelFirst.pdb
