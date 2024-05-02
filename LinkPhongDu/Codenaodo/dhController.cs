@@ -20,6 +20,8 @@ namespace dhController
         base.ViewLocationFormat = viewEnginePaths;
         base.MasterLocationFormat = viewEnginePaths;
     }
+
+    
     [ApiController]
     [Route("api/[controller]")]
     public class UserController: ControllerBase
