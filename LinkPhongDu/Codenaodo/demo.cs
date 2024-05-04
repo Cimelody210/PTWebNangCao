@@ -12,7 +12,7 @@ namespace demo
         private readonly ILogger<IndexModel> _logger;
         public IndexModel(ILogger<IndexModel> logger)
         {
-
+           
         }
 
     }
