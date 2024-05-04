@@ -9,6 +9,46 @@ namespace dhController
 {
     private const string FeaturePlaceHolder = "$FEATURE";
 
+    public static List<Alumo> alu_list  = new List<Alumo>{
+        new Alumo{
+            id= 1,
+            normne = "Abreto",
+            nApPaterno = "caseas",
+            ApPaterno = "las",
+            FecAlta = DateTime.Parse(DateTime.Today.ToString()),
+            Edad= 30
+        },
+        new Alumo{
+            normne = "Joe Biden",
+            nApPaterno = "Washington DC",
+            ApPaterno = "Ilasdd",
+            id= 21,
+            FecAlta = DateTime.Parse(DateTime.Today.ToString()),
+            Edad= 40
+        }
+    };
+    [TypeConverter(typeof(VertexConverter))]
+    public class vertex: ExpandableObjectConverter
+    {
+        public override bool CanConverter(ITypeDescriptionContext context, Type sourcetype)
+        {
+            return true;
+        }
+        public override object ConvertFrom(ITypeDescriptionContext context, CultureInfo cult)
+        {
+            const string PATTERN = "!@#$%^&*()_WERTYUI!@#$%^&*()"
+            Match match = Regex.Match(value.ToString(), PATTERN);
+            if(match.Sucess)
+            {
+                Vertex v= new Vertex();
+                v.X = int.Parse(match.Groups["X"].Value);
+                v.Y = int.Parse(match.Groups["Y"].Value);
+                v.Z = int.Parse(match.Groups["Z"].Value);
+                return v;
+            }
+        }
+    }
+
     public FeatureLayoutViewEngine()
     {
         var viewEnginePaths = new[]{
@@ -40,12 +80,14 @@ namespace dhController
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public ActionResult Index(FormCollection collection)
     {
         string name = Request.Form["Name"].ToString();
         string designation = Request.Form["Designation"].ToString();
         string city = Request.Form["City"].ToString();
         string user_name = Request.Form["User_name"].ToString();
+        
 
         name  = collection["Name"].ToString();
     }
