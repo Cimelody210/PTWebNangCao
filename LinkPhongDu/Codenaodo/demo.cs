@@ -38,6 +38,32 @@ namespace demo
             load(tendangnhap);
         }
     }
+    public class X(){
+        try
+        {
+            String connectionstring  ="Data Source:///ff";
+            using(SqlConnection connect = new SqlConnection(connectionstring))
+            {
+                connect.Open();
+                String sql = "UPDATE client SET name = @name WHERE";
+                using(SqlCommand command = new SqlCommand(sql, connect))
+                {
+                    command.Parameter.AddWithValue("@name", clientInfo.name);
+                    command.Parameter.AddWithValue("@email", clientInfo.email);
+                    command.Parameter.AddWithValue("@phone", clientInfo.phone);
+                    command.Parameter.AddWithValue("@address", clientInfo.address);
+                    command.Parameter.AddWithValue("@id", clientInfo.id);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            error = e.Message;
+            return;
+        }
+    }
     
     public int Login(string username, string password, bool isLoginAdmin =false)
     {

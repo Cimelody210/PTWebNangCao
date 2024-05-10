@@ -70,6 +70,12 @@ namespace dhController
         {
             this.dataStore = dataStore;
         }
+        
+        // Service lifetimes
+        var builder =  WebAppication.CreateBuilder(args);
+        builder.Services.AddTransient<ProductService>();
+        builder.Services.AddScopes<ProductService>();
+        builder.Services.AddSingleton<ProductService>();
 
         [HttpGet]
         public async Task<IActionResult> Get()
