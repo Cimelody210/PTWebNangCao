@@ -4,9 +4,11 @@ using System.Collection.Generic;
 using System.Linq;
 using System.Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Microsoft.Extensions.Logging;
+using System.Data.SqlClient;
 
 namespace demo
 {
+    LopKetNoi ketnoi  =new LopKetNoi();
     public class IndexModel: PageModel1
     {
         private readonly ILogger<IndexModel> _logger;
@@ -21,6 +23,22 @@ namespace demo
         return db.tbNguoiDung.SingleOrDefault(x => x.TaiKhoan == username);
         
     }
+    public void load(string tendangnhap)
+    {
+        string sql = "select A,....";
+        DataTable dt = ketnoi.docdulieu(sql);
+        GridView1.DataSource = dt;
+        GridView1.DataBind();
+    }
+    public void Page_load(object sender, EventArgs e)
+    {
+        if(isPostBack) return;
+        string tendangnhap = Session["username"]+ "";
+        if(tendangnhap != ""){
+            load(tendangnhap);
+        }
+    }
+    
     public int Login(string username, string password, bool isLoginAdmin =false)
     {
         var result = db.tbNguoiDung.SingleOrDefault(x => x.TaiKhoan == username);
