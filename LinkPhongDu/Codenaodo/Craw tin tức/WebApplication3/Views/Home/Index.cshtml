@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebApplication3.Models.BlogData>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .out_scraping{
+        margin-top:50px;
+        border:1px solid lightgray;
+        border-radius:10px;
+        padding:15px;
+    }
+    .scraping_input{
+        margin-top:30px;
+    }
+</style>
+<div class="scraping_input">
+    <form method="post" action="/Home/ScrapWebsite">
+        <input type="text" name="website" title="website" placeholder="Enter website url"/>
+        <input type="submit" title="Scrap Website"/>
+    </form>
+</div>
+
+<div class="out_scraping">
+    <h4>Scaping Output</h4>
+
+    <div>
+        @if(Model.Count()!=0)
+        {
+            foreach(var blogData in Model)
+            {
+                <div>
+                    <img src="@blogData.BlogImage" />
+                    <p>@blogData.Title</p>
+                    <p>@blogData.Author</p>
+                    <p>@blogData.PublishDate</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No Data Found</p>
+        }
+
+       
+    </div>
+</div>

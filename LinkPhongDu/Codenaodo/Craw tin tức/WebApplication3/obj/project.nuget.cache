@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AjJLuvyJeZwCAmwgHSt3foCJaR306U1cMePTjkpFmaA/cBwsm0IwtpMHUbj0bON6Fu4kr9Lz7VOS/S7Xw8g+Kg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC602\\Downloads\\WebApplication3\\WebApplication3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC602\\.nuget\\packages\\htmlagilitypack\\1.11.60\\htmlagilitypack.1.11.60.nupkg.sha512"
+  ],
+  "logs": []
+}
