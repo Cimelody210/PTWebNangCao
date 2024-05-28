@@ -1,0 +1,40 @@
+﻿@model OnlinePizzaWebApplication.Models.PizzaIngredients
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Tạo mới</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Nguyên liệu pizza</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="PizzaId" class="col-md-2 control-label">ID pizza</label>
+            <div class="col-md-10">
+                <select asp-for="PizzaId" class ="form-control" asp-items="ViewBag.PizzaId"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="IngredientId" class="col-md-2 control-label">ID nguyên liệu</label>
+            <div class="col-md-10">
+                <select asp-for="IngredientId" class ="form-control" asp-items="ViewBag.IngredientId"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tạo" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Quay về danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

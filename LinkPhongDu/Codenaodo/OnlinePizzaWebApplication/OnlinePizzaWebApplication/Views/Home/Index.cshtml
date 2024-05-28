@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Pizzas>
+
+@{
+    var pageName = "Home Page";
+    ViewData["Title"] = pageName;
+}
+
+<div align="center">
+    <h1>Chào mừng đến với cửa hàng Pizza của tôi!</h1>
+    <h2>Đây là danh sách pizza hàng tuần của chúng tôi.</h2>
+</div>
+
+
+@await Component.InvokeAsync("CarouselMenu")
